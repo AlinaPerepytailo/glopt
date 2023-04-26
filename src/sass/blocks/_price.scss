@@ -1,0 +1,102 @@
+.price{
+    padding-top: 53px;
+    &__wrapper{
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 28px;
+        grid-template-rows: auto;
+        grid-auto-rows: auto;
+    }
+    &__catalog{
+        overflow: hidden;
+    }
+    &__item-wrapper{
+        display: grid;
+        width: 200%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    &__item{
+        border: 1px solid #e9e9e9;
+        padding-bottom: 25px;
+        transform: translateX(-100%);
+        transition: 0.5s all;
+        &_active{
+            transform: translateX(0%);
+        }
+    }
+    &__header{
+        width: 100%;
+        background-color: var(--title-color);
+        height: 61px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__header-subtitle{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 23px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    &__descr{
+        width: 100%;
+    }
+    &__descr-icon{
+        margin-top: 14px;
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    &__descr-time{
+        margin-top: 12px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 23px;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--title-color);
+    }
+    &__descr-price{
+        font-size: 28px;
+        line-height: 30px;
+        text-align: center;
+        color: var(--main-color);
+    }
+    &__descr-text{
+        margin-top: 19px;
+        padding: 0 11px;
+        text-align: center;
+    }
+    &__descr-button{
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+    &__item-list{
+        padding: 0 10px 0 20px;
+        border: 1px solid #e9e9e9;
+        transform: translateX(0);
+        transition: .5s all;
+        &_active{
+            transform: translateX(-100%);
+        }
+        ul{
+            li{
+                margin-top: 10px;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 22px;
+                color:var(--text-color);
+                &::marker{
+                    color: var(--main-color);
+                }
+            }
+        }  
+    }
+    &__list-button{
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}

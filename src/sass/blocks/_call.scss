@@ -1,0 +1,106 @@
+.call{
+    padding: 56px 0;
+    &__title{
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 23px;
+        text-align: center;
+        color: var(--text-color);
+    }
+    &__wrapper{
+        position: relative;
+        margin-top: 71px;
+        padding-top: 67px;
+        margin-bottom: 80px;
+        &:before{
+            position: absolute;
+            display: block;
+            top: 3px;
+            left: 16px;
+            content:'';
+            height: 170px;
+            width: 1px;
+            background-color:#898989;
+        }
+        &:after{
+            position: absolute;
+            display: block;
+            top: 3px;
+            right: 16px;
+            content:'';
+            height: 170px;
+            width: 1px;
+            background-color:#898989;
+        }
+    }
+    &__icon{
+        position: absolute;
+        left: 50%;
+        top: -48px;
+        transform: translateX(-50%);
+        width: 102px;
+        height: 102px;
+        border: 1px solid var(--main-color);
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:before{
+            position: absolute;
+            right: 113px;
+            content:'';
+            width: 490px;
+            height: 1px;
+            background-color:#898989;
+        }
+        &:after{
+            position: absolute;
+            left: 113px;
+            content:'';
+            width: 490px;
+            height: 1px;
+            background-color:#898989;
+        }
+    }
+    .error{
+        font-size: 12px;
+        text-align: center;
+        margin: 0;
+        border: 1px solid var(--main-color); 
+    }
+    #name-error{
+        border: none;
+        grid-row: 2/3;
+    }
+    #phone-error{
+        grid-row: 2/3;
+        border: none;
+    }
+    #email-error{
+        grid-row: 2/3;
+        border: none;
+    }
+    button{
+        margin: 0 5px;
+        position: absolute;
+        top: 83px;
+        left: 50%;
+        transform: translateX(-50%);
+        &:before{
+            position: absolute;
+            right: 168px;
+            content:'';
+            width: 467px;
+            height: 1px;
+            background-color:#898989;
+        }
+        &:after{
+            position: absolute;
+            left: 168px;
+            content:'';
+            width: 458px;
+            height: 1px;
+            background-color:#898989;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.title{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--title-color);
+    &_red{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--main-color);
+    }
+    &_white{
+        margin-top: 20px;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 23px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
+.subtitle{
+    margin-top: 17px;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--title-color);
+}

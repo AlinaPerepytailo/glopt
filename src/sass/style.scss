@@ -1,0 +1,38 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts';
+@import 'libs/slick';
+@import 'libs/slick-theme';
+@import 'base/variables';
+
+* {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+@import 'blocks/titles';
+@import 'blocks/texts';
+@import 'blocks/promo';
+@import 'blocks/modal';
+@import 'blocks/buttons';
+@import 'blocks/forms';
+@import 'blocks/advantages';
+@import 'blocks/more';
+@import 'blocks/divider';
+@import 'blocks/agent';
+@import 'blocks/price';
+@import 'blocks/call';
+@import 'blocks/managers';
+@import 'blocks/work';
+@import 'blocks/opinion';
+@import 'blocks/question';
+@import 'blocks/map';
+@import 'blocks/footer';
+@import 'blocks/pageup';
+@import 'base/media';

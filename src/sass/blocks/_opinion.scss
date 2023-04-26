@@ -1,0 +1,65 @@
+.opinion{
+    position: relative;
+    padding: 51px 0 65px 0;
+    &__carousel{
+        margin-top: 31px;
+        &-logo{
+            img{
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        &-title{
+            margin-top: 19px;
+            color: #3a3a3a;
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+        }
+        &-descr{
+            margin-top: 12px;
+            color: #3a3a3a;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 22px;
+            text-align: center;
+        }
+    }
+}
+.slick-slide{
+    width: 601px;
+    opacity: 0.5;
+    scale: 0.8;
+}
+.slick-active{
+    opacity: 1;
+    scale: 1;
+}
+.slick-arrow{
+    position: absolute;
+    z-index: 10;
+}
+.slick-prev{
+    left: 460px;
+    top: 50px;
+    &::before{
+        display: none;
+    }
+}
+.slick-next{
+    right: 460px;
+    top: 50px;
+    &::before{
+        display: none;
+    }
+}
+.slick-dots{
+    li{
+        button{
+    &:before {
+     font-size: 20px;
+            }
+        }
+    }
+}
+

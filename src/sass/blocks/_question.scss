@@ -1,0 +1,75 @@
+.question{
+    padding: 62px 0 79px 0;
+    background: url(../img/questions_bg.png)center (center/cover) no-repeat;
+    &__header{
+        margin: 0 auto;
+        padding: 20px 0;
+        width: 896px;
+        background-color: #25333c;
+    }
+    &__title{
+        font-size: 19px;
+        line-height: 19px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        span{
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+    &__form{
+        display: block;
+        margin: 0 auto;
+        padding: 18px 39px 25px 39px;
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 896px;
+        form{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 6px;
+            grid-template-rows: repeat(3, auto);
+            grid-auto-rows: auto;
+            row-gap: 8px;
+            justify-content: center;
+            textarea{
+                height: 71px;
+                grid-column: 1/4;
+                border-radius: 15px;
+                padding: 10px 20px;
+                font-weight: 300;
+                font-size: 14px;
+            }
+            input{
+                height: 39px;
+                &:nth-child(3){
+                   margin: 0;
+                }
+            }
+            button{
+                margin-top: 10px;
+                grid-column: 2/3;
+            }
+
+        }
+    }  
+    .error{
+        border: 2px solid var(--main-color); 
+        margin: 0;
+    }
+    label.error{
+        border:none;
+        font-size: 12px;
+       text-align: center;
+
+    }
+    #phone-error{
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    #name-error{
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+}

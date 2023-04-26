@@ -1,0 +1,36 @@
+.work{
+    padding: 51px 0 46px 0;
+    background-color:#f3f3f3;
+    &__wrapper{
+        margin-top: 33px;
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        row-gap: 43px;
+        &-row_1{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 43px;
+        }
+        &-row_2{
+            padding: 0 153px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 43px;
+        }
+        &-logo{
+            img{
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        &-title{
+            margin-top: 12px;
+            text-align: center;
+        }
+        &-text{
+            margin-top: 5px;
+            text-align: center;
+        }
+        
+    }
+}
